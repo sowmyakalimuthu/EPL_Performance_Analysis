@@ -11,7 +11,6 @@ Match Data: The primary dataset used for this analysis is the "EPL.csv" file, co
 PowerBI - Creating reports
 
 ### Data Analysis Using Power BI
-=================================
 
 1. Formula to create MinutesperMatch column
 
