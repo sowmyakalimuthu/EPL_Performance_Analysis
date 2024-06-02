@@ -11,14 +11,17 @@ Match Data: The primary dataset used for this analysis is the "EPL.csv" file, co
 PowerBI - Creating reports
 
 ### Data Analysis Using Power BI
+=================================
 
 1. Formula to create MinutesperMatch column
-      = MinutesperMatch = EPL_20_21[Mins]/EPL_20_21[Matches]
 
-1. Formula to create GoalsperMatch column
-      = GoalsperMatch = EPL_20_21[Goals]/EPL_20_21[Matches]
+= Table.AddColumn(MinutesperMatch = EPL_20_21[Mins]/EPL_20_21[Matches])
 
-#### DAX Queries
+2. Formula to create GoalsperMatch column
+
+= Table.AddColumn(GoalsperMatch = EPL_20_21[Goals]/EPL_20_21[Matches])
+
+### DAX Queries
 Create a following meaurements :
 1. Total Goals = sum(EPL_20_21[Goals])
 1. Total Assists = sum(EPL_20_21[Assists])
